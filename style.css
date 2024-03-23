@@ -113,7 +113,7 @@ h1 .fa-list {
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url('/toDoListApp/unchecked.png');
+    background: greenyellow;
     border-radius: 50%;
     margin-right: 6px;
     background-repeat: no-repeat;
