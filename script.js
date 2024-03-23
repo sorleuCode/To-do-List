@@ -18,6 +18,7 @@ const addTask = () => {
         if(addTaskBtn.innerText !== "Add task") {
             addTaskBtn.innerText = "Add task";
 
+            // shows notification when an item has been updated
             notification.innerText = "you have updated an item! 😎"
             notification.style.color = "blue";
         }
