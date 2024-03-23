@@ -11,7 +11,7 @@ const addTask = () => {
         alert("Please add your task!")
 
         // this notification shows add tasks
-        notification.innerText = "Enter your task 🤔!";
+        notification.innerText = "Enter your task! 🤔";
         notification.style.color = "red";
     }
     else {
@@ -33,7 +33,7 @@ const addTask = () => {
         li.appendChild(span);
 
 
-        notification.innerText = "you have succesfully added an item 🤗"
+        notification.innerText = "you have succesfully added an item! 🤗"
         notification.style.color = "green";
     }
 
