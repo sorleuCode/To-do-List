@@ -148,7 +148,6 @@ h1 .fa-list {
 @media screen and (max-width: 593px) {
     .parentContainer {
         width: 400px;
-        border: 5px solid black;
 
     }
 
@@ -178,7 +177,7 @@ h1 .fa-list {
 
     .parentContainer {
         width: 370px;
-        min-height: 60vh;
+        min-height: 50vh;
 
     }
 
