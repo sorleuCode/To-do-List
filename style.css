@@ -181,9 +181,6 @@ h1 .fa-list {
 
     }
 
-    .listItems {
-        font-size: 15px;
-    }
 
     .listItems li::before {
         width: 18px;
