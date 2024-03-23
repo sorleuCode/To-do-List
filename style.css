@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(75deg, #70d6ff, #118ab2);
+
+}
+
+.parentContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 2rem;
+    width: 500px;
+    margin: 0 auto;
+}
+.toDoContainer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 30px;
+    height: 60px;
+    background-color: #edf6f9;
+    padding: 10px;
+
+}
+
+.inputContainer button {
+    font-size: 20px;
+    padding: 7px;
+    background-color: #ffddd2;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.inputContainer input {
+    outline: none;
+    border: none;
+    background-color: #edf6f9;
+    font-size: 20px;
+    flex: 1;
+}
+
+.inputContainer input::placeholder {
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    color: #fed9b7;
+    margin-top: 5px;
+}
+
+h1 .fa-list {
+    color: white;
+}
+
+#notification {
+    text-align: center;
+    color: #118ab2;
+}
+
+.listItems {
+    margin-top: 30px;
+}
+
+.listItems li {
+    margin-top: 10px;
+    list-style-type: none;
+    background-color: #edf6f9;
+    padding: 10px 7px 10px 30px;
+    border-radius: 8px 10px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.listItems li span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1.1rem;
+    font-size: 20px;
+    margin-top: 5px;
+    position: absolute;
+    right: 5px;
+}
+
+
+
+.listItems li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('/toDoListApp/unchecked.png');
+    border-radius: 50%;
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 2px;
+    position: absolute;
+    left: 5px;
+    top: 13px;
+}
+
+.listItems li.checked {
+    color: darkgray;
+    text-decoration: line-through;
+}
+
+.listItems li.checked::before {
+    background-image: url("./checkmark.png");
+}
+
+#editBtn {
+    cursor: pointer;
+}
+
+#deleteBtn {
+    cursor: pointer;
+    
+}
