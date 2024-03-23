@@ -11,7 +11,8 @@ const addTask = () => {
         alert("Please add your task!")
 
         // this notification shows add tasks
-        notification.innerText = "Add task 🤔!"
+        notification.innerText = "Enter your task 🤔!";
+        notification.style.color = "red";
     }
     else {
         if(addTaskBtn.innerText !== "Add task") {
@@ -50,9 +51,9 @@ const deleteOrUpdateTask = (e) => {
         e.target.classList.toggle("checked")
 
         // this shows a task is completed
-        notification.innerText = `The task "${e.target.innerText}" is completed`
+        notification.innerText = `You just completed the task "${e.target.innerText}"`
         notification.style.color = "darkgreen";
-        
+
         saveData();
     }
     else if (e.target.tagName === "I" && e.target.className === "fa-solid fa-trash"){

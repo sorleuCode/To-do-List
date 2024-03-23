@@ -75,10 +75,12 @@ h1 .fa-list {
 #notification {
     text-align: center;
     color: #118ab2;
+    margin-top: 15px;
 }
 
 .listItems {
     margin-top: 30px;
+    position: relative;
 }
 
 .listItems li {
@@ -139,4 +141,114 @@ h1 .fa-list {
 #deleteBtn {
     cursor: pointer;
     
+}
+
+
+
+@media screen and (max-width: 593px) {
+    .parentContainer {
+        width: 400px;
+        border: 5px solid black;
+
+    }
+
+}
+
+@media screen and (max-width: 486px) {
+    
+    .inputContainer input::placeholder {
+        font-size: 15px;
+    }
+
+    .inputContainer button {
+        font-size: 15px;
+        padding: 7px;
+        border-radius: 18px;
+    }
+
+    .inputContainer input {
+        font-size: 15px;
+    }
+
+    .inputContainer {
+        border-radius: 30px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .parentContainer {
+        width: 370px;
+        min-height: 60vh;
+
+    }
+
+    .listItems {
+        font-size: 15px;
+    }
+
+    .listItems li::before {
+        width: 18px;
+        height: 18px;
+        margin-top: 1px;
+
+    }
+
+    #notification {
+        font-size: 13px;
+    }
+
+
+    body {
+        background: #118ab2
+
+    }
+
+    .listItems li span {
+        gap: 1rem;
+        font-size: 18px;
+        margin-top: 6px;
+
+    }
+
+    .listItems  li{
+        padding: 8px 6px 8px 29px;
+
+
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .parentContainer {
+        width: 340px;
+    }
+
+    .inputContainer button {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+}
+
+@media screen and (max-width: 379px){
+    .parentContainer {
+        width: 320px;
+    }
+
+    .listItems  li {
+        font-size: 12px;
+    }
+
+    .listItems li::before {
+        width: 17px;
+        height: 17px;
+        margin-top: 0.2rem;
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .parentContainer {
+        width: 300px;
+        min-height: 50vh;
+    }
 }
