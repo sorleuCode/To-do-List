@@ -69,6 +69,7 @@ const deleteOrUpdateTask = (e) => {
         saveData();
     }
     else if (e.target.tagName === "I" && e.target.className === "fa-solid fa-trash"){
+        
         e.target.parentElement.parentElement.remove();
 
         // this set a deletion value in red color for notification
