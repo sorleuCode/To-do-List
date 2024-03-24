@@ -15,6 +15,8 @@ const addTask = () => {
         notification.style.color = "red";
     }
     else {
+
+        // To update an item
         if(addTaskBtn.innerText !== "Add task") {
             addTaskBtn.innerText = "Add task";
 
@@ -43,6 +45,15 @@ const addTask = () => {
 }
 
 addTaskBtn.addEventListener("click", addTask);
+
+
+// making enter key to trigger addtask button to click
+
+inputBox.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        addTaskBtn.click();
+    }
+});
 
 
 // creating a function for deleting and updating the task
