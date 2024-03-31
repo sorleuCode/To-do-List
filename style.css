@@ -51,6 +51,12 @@ body {
     border-radius: 20px;
 }
 
+
+.inputContainer button:hover {
+    background-color: black;
+    color: #fff;
+}
+
 .inputContainer input {
     outline: none;
     border: none;
@@ -132,6 +138,13 @@ h1 .fa-list {
 
 .listItems li.checked::before {
     background-image: url("./checkmark.png");
+}
+
+.listItems li span i:nth-child(1):hover{
+    color: orange;
+}
+.listItems li span i:nth-child(2):hover{
+    color: red;
 }
 
 /* animation for adding new task*/
